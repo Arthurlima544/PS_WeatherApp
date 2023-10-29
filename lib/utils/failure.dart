@@ -20,3 +20,8 @@ class WeatherFailure extends Failure {
 class CityNotFoundFailure extends WeatherFailure {
   const CityNotFoundFailure(String message) : super(message);
 }
+
+/// Generic failure when occur a problem in the server
+class WeatherServerFailure extends WeatherFailure {
+  const WeatherServerFailure(String message) : super(message);
+}

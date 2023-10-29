@@ -6,13 +6,11 @@ class Weather extends Equatable {
   final String cityName;
   final int temperatureCelcius;
   final String weatherDescription;
-  final Image? image;
 
   const Weather({
     required this.cityName,
     required this.temperatureCelcius,
     required this.weatherDescription,
-    required this.image,
   });
 
   @override
@@ -21,7 +19,6 @@ class Weather extends Equatable {
     cityName: $cityName, 
     temperatureCelcius: $temperatureCelcius, 
     weatherDescription: $weatherDescription, 
-    image: $image
     )''';
   }
 
@@ -31,7 +28,6 @@ class Weather extends Equatable {
       cityName,
       temperatureCelcius,
       weatherDescription,
-      image,
     ];
   }
 }
