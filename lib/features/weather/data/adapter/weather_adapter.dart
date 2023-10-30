@@ -3,9 +3,9 @@ import 'package:ps_weather_app/features/weather/domain/entities/weather.dart';
 class WeatherAdapter {
   static Weather fromJson(Map<String, dynamic> data) {
     return Weather(
-      cityName: data['cidade'],
-      temperatureCelcius: data['temperatura'],
-      weatherDescription: data['descricao'],
+      cityName: data['name'],
+      temperatureCelcius: data['tempo'],
+      weatherDescription: data['description'],
     );
   }
 
