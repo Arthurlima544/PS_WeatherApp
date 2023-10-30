@@ -14,9 +14,9 @@ const fakeCityNotFoundFailure = CityNotFoundFailure(
 );
 
 const fakePostRequestWeather = {
-  "cidade": "Ceará",
-  "temperatura": 32,
-  "descricao": "Sol",
+  "name": "Ceará",
+  "tempo": 32,
+  "description": "Sol",
 };
 
 final fakeDioException = DioException(
